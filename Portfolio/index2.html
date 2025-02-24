@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/cc728f0efa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <h1><a id="new1" href="index.html"><i class="fa-solid fa-arrow-left"></i></a>Certificates</h1>
+    </div>
+
+    <div class="container">
+     <div class="crt">
+        <img src="images/crt1.png" alt="">
+     </div>
+     <div class="crt">
+        <img src="images/crt2.png" alt="">
+     </div class="crt">
+     <div class="crt">
+        <img src="images/crt3.png" alt="">
+     </div>
+     <div class="crt">
+        <img src="images/crt4.png" alt="">
+     </div>
+     <div class="crt">
+        <img src="images/crt5.jpg" alt="">
+     </div>
+     <div class="crt">
+        <img src="images/crt6.jpg" alt="">
+     </div>
+     <div class="crt">
+        <img src="images/crt7.jpg" alt="">
+     </div>
+     <div class="crt">
+        <img src="images/crt8.jpg" alt="">
+     </div>
+     <div class="crt">
+        <img src="images/crt9.jpg" alt="">
+     </div>
+     <div class="crt">
+        <img src="images/crt10.jpg" alt="">
+     </div>
+     <div class="crt">
+      <img src="images/crt11.png" alt="">
+     </div>
+     <div class="crt">
+      <img src="images/crt12.png" alt="">
+     </div>
+     <div class="crt">
+      <img src="images/crt13.jpg" alt="">
+     </div>
+    </div>
+
+    <div class="popup-img">
+      <span> &times </span>
+      <img src="images/crt1.png" alt="">
+    </div>
+</body>
+
+
+<script>
+   document.querySelectorAll('.container img').forEach(crt =>{
+      crt.onclick = () =>{
+         document.querySelector('.popup-img').style.display = 'block';
+         document.querySelector('.popup-img img').src = crt.getAttribute('src')
+      }
+   });
+   document.querySelector('.popup-img span').onclick = () =>{
+      document.querySelector('.popup-img').style.display = 'none';
+
+   }
+</script>
+</html>

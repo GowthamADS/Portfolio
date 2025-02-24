@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/cc728f0efa.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+    <!-- <h1 class="counter">0</h1>
+    <div class="overlay">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div> -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Project</a></li>
+                <li><a href="#portfolio">Certificate</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+             <ul class="dynamic-txts">
+                <li><span>Programmer</span></li>
+                <li><span>Designer</span></li>
+                <li><span>Web Developer</span></li>
+                <li><span>Student</span></li>
+             </ul>
+           <h1>Hi, I'm <span>Gowtham </span> <br> <h2>B.Tech ADS</h2></h1> <a class="e" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                                                           <a class="e" href=""><i class="fa-brands fa-github"></i></a>
+                                                                           <a class="e" href=""><i class="fa-regular fa-envelope"></i></a> 
+                                                                           <a class="e" href=""><i class="fa-brands fa-instagram"></i></a><img class="ho" src="images/h0.jpg" alt="">
+        </div>
+    </div> 
+</div>
+<!-----------------about-------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p class="p1"> Highly motivated and emphatic student with ability to update the knowledge by learning and looking<br>
+                    for the reputable organization to utilize my skills in the field of Data Science
+                    for the growth of the organization as well as to enhance my knowledge about new and emerging trends</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Languages</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Website Development</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Progamming</span><br>Problem solving</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Python</span><br><p class="lin"> ------------------------------------  <span class="x">70%</span></p></li>
+                        <li><span>Java</span><br><p class="lin">-----------------------  <span class="x">40%</span></p></li>
+                        <li><span>Html,Css</span><br><p class="lin">----------------------------------------------  <span class="x">80%</span></p></li>
+                        <li><span>Javascript</span><br><p class="lin">-----------------------  <span class="x">40%</span></p></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - 2026</span><br>CGPA - 8.1 <br>St.Joseph's Institute of Technology</li>
+                        <li><span>2022</span><br>90% <br> 12th - David.Mat.Hr.Sec.School</li>
+                        <li><span>2019</span><br>71% <br> 10th - David.Mat.Hr.Sec.School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------services----------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Project</h1>
+        <div class="services-list">
+           <div>
+               <i class="fa-solid fa-helmet-safety"></i>
+               <h2>Smart Helmet</h2>
+               <p>The Smart Care Helmet combines advanced Road safety and cutting-edge technology.
+                With features like Alcohol detection, HighSpeed detection, GPS tracking,
+                and instant emergency alerts, it ensures protection for cyclists, motorcyclists.</p>
+               <a href="#">Learn more</a>
+           </div>
+           <div>
+               <i class="fa-solid fa-leaf"></i>
+               <h2>Drone</h2>
+               <p>Development of an Autonomous Drone with Thermal Imaging and Advanced Segmentation for Rapid Human
+                Detection in Natural Disasters</p>
+               <a href="#">Learn more</a>
+           </div>
+           <div>
+            <i class="fa-brands fa-bots"></i>
+               <h2>ChatBOt</h2>
+               <p>----in Process----</p>
+               <a href="#">Learn more</a>
+           </div>   
+        </div>
+    </div>
+</div>
+<!-- -------------------portfolio----------------->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Achievement</h1>
+        <div class="work-list">
+            <div class="work">
+                <img class="imgg" src="images/p1.jpg">
+                <div class="layer">
+                    <h3>Hackothan</h3>
+                    <p>Project Presentation</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/p2.jpg">
+                <div class="layer">
+                    <h3>Hackothan</h3>
+                    <p>Paper Presentation</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/p3.jpg">
+                <div class="layer">
+                    <h3>AI-ZYPHER'24</h3>
+                    <p>Shark Tank Technical Event <br>WINNER</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a id="new" href="index2.html" class="btn">See more</a>
+    </div>
+ </div>
+<!-- --------contact--------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>gowthamads1216@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7338833544</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/gowtham-d-25a8a3259/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/GowthamADS"><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-regular fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/g0wthamx97/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="images/Gowtham D_resume.pdf" download class="btns btn2">Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btns btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright  &#169 Gowtham <i class="fa-solid fa-face-grin-wink"></i>.</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     } 
+
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxpwjwdeu8rw8F302IAEMd1zTo0L8dMzBWakNyOMxpPGV3dCuSyJeA8b-kMLVVyC73peA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    
+    function startLoader() {
+        let counterElement = document.querySelector(".counter");
+        let currentValue = 0;
+
+        function updateCounter() {
+            if(currentValue === 100) {
+                return;
+            }
+
+            currentValue += Math.floor(Math.random() * 10) + 1;
+            
+            if(currentValue > 100) {
+            currentValue = 100;
+            }
+            
+            counterElement.textContent = currentValue;
+
+            let delay = Math.floor(Math.random() * 200) + 50;
+            setTimeout(updateCounter, delay);
+        }
+
+        updateCounter();
+    }
+
+    startLoader();
+
+    gsap.to(".counter", 0.25,{
+        delay: 3.5,
+        opacity: 0,
+    });
+     
+    gsap.to(".bar",1.5,{
+        delay: 3.5,
+        height: 0,
+        stagger: {
+            amount: 0.5,
+        },
+        ease: "power4.inOut",
+    });
+
+</script> -->
+
+</body>
+</html>
